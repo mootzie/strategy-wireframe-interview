@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+      <div class="logo" style="">
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+          srcset=""
+          style="width: 100px; margin-top: 10px"
+        />
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a class="nav-item active" href="">Home</a></li>
+          <li><a class="nav-item" href="">About</a></li>
+          <li><a class="nav-item" href="">Contact</a></li>
+          <li><a class="nav-item" href="">Blog</a></li>
+          <li><button class="action">Call to action</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Welcome to Orange</h1>
+        <p>Where you belong.</p>
+        <button>Join Now</button>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <div class="about-text">
+        <h1>About us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          quaerat recusandae esse est quam inventore nihil consequatur aliquid
+          fugit dolores accusantium enim quasi et, deleniti error necessitatibus
+          libero repudiandae alias.
+        </p>
+        <div class="grid">
+          <div class="row">
+            <div class="col1">stuff</div>
+            <div class="col2">stuff</div>
+            <div class="col3">stuff</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
